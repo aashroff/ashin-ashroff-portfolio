@@ -5,22 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Ashin Ashroff // Web Development portfolio</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1><span id="firstName">Ashin</span> <span id="lastName">Ashroff</span></h1>
     <nav>
+      <ul class="nav__links"> 
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+    <div id="banner-contents">
+      <h2>Web Development Portfolio</h2>
+      <img src="./assets/images/my-avatar.png" width="180" alt="A 2d Cartoon avatar of myself">
     </div>
   </section>
 
@@ -28,16 +34,38 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <p>Hello! My name is Ashin. This is a portfolio website made with everything that I've learned
+        from the first two weeks of the front end development bootcamp. </p>
+      
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <div class="portfolio-items">
+        <div class="featured-portfolio">
+          <a href="#index"><img src="./assets/images/02-portfolio-1.jpg"></a>
+          <p>Featured</p>
+        </div>
+        <div class="work-group">
+          <div class="work-1">Work 1</div>
+          <div class="work-2">Work 2</div>
+          <div class="work-3">Work 3</div>
+          <div class="work-4">Work 4</div>
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <div id="contact-info">
+        <p>Email: ashin.ashroff@yahoo.com</p>
+        <p>Telephone: XXX-XXX-XXX</p>
+        <p>GitHub: <a href="https://github.com/aashroff">github.com/aashroff</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ashinashroff/">Click Here</a></p>
+
+      </div>
     </section>
   </main>
 </body>

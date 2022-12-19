@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+
+  --primary-color: #EAE7DC;
+  --secondary-color: #D8C385;
+  --grey: #8E8D8A;
+  --accent-color: #E85A4F;
+  --acent-color-light: #E98074;
+
+}
+
+* {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+}
+
+
+header{
+  
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width:100%;
+}
+
+header h1{
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+li,a {
+
+  text-decoration: none;
+  color: var(--grey);
+}
+
+#firstName{
+
+  color:var(--accent-color);
+}
+
+#lastName{
+
+  color:var(--acent-color-light)
+}
+
+
+.nav__links{
+
+  list-style: none;
+  
+}
+
+.nav__links li{
+
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+
+.nav__links li a:hover{
+
+  color: var(--accent-color);
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.hero-banner{
+  margin:30px 10%;
+  min-height: 200px;
+  background-color: rgba(0.6, 0.5, 0.3, 0.2);
+}
+
+#banner-contents h2{
+
+  position:absolute;
+  margin:0px;
+  color: #555553
+
+}
+
+#banner-contents img{
+
+  position:absolute;
+  margin:0px;
+  padding:0px;
+  max-width:100%;
+  height: auto;
+  border-radius: 50%;
+  right:220px;
+  top:250px;
+  border: 9px solid var(--acent-color-light);
+
+}
+
+.page-wrapper{
+
+  padding: 30px 10%;
+
+}
+
+#about{
+  padding-top:10px;
+  display:flex;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+#about p{
+
+  flex-grow: 2;
+  margin: 20px 5%;
+}
+
+#about h2{
+  padding-right: 15px;
+  border-right: 5px dotted var(--acent-color-light);
+  color: var(--grey)
+  
+}
+
+#work{
+
+  display:flex;
+  padding-top:10px;
+  min-height: 40vh;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+#work h2{
+
+ margin:0;
+  padding-right: 24px;
+  border-right: 5px dotted var(--acent-color-light);
+  color: var(--grey)
+
+}
+
+.portfolio-items{
+  margin: 5px 8%;
+  gap:2rem;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+}
+
+.work-1{
+  background-color: #555553;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  object-fit: cover;
+  width:200px;
+  height: 120px;
+ 
+}
+
+.work-2{
+  background-color: #555553;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  width:200px;
+  height: 120px;
+}
+
+.work-3{
+  background-color: #555553;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  width:200px;
+  height: 120px;
+}
+.work-4{
+  background-color: #555553;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+  width:200px;
+  height: 120px;
+}
+
+
+.work-group{
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 0.5rem;
+  min-height: 150px;
+  justify-content: center;
+  align-content: space-around;
+
+}
+
+.featured-portfolio{
+
+  position:relative;
+  margin:0px;
+  padding: 0px;
+  border-bottom: #E85A4F solid;
+
+}
+
+
+.featured-portfolio img{
+
+  width: 100%;
+  max-height: 300px;
+  height:60%;
+  margin:0px;
+  padding:0px;
+  object-fit: cover;
+}
+
+
+
+.featured-portfolio p{
+
+  background-color: #D8C385;
+  padding: 15px;
+  position: absolute;
+  left: 0px;
+  bottom: 100px;
+}
+
+#contact{
+
+  border-top: #E85A4F solid;
+}
+
+#contact-info{
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+}
+
+p {
+  margin: 0;
+}
+
+
+@media  screen and (min-width: 1300px) and (max-width:1550px) {
+
+  #work h2{
+
+    padding-right:45px;
+  }
+
+  .portfolio-items{
+
+    margin: 5px 5%;
+  }
+
+}
+
+
+  @media  screen and (min-width: 1550px) and (max-width:1750px){
+
+    #work h2{
+  
+      padding-right:60px;
+    }
+  
+    .portfolio-items{
+  
+      margin: 5px 5%;
+    }
+  }
+
+
+  @media  screen and (min-width: 1750px) and (max-width:2560px){
+
+    #work h2{
+  
+      padding-right:63px;
+    }
+  
+    .portfolio-items{
+  
+      margin: 5px 5%;
+    }
+  }
